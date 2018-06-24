@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Portfolio Moreno Maio</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script type="text/javascript"> 
+            nascondiHomepage = function() {
+            }
+            mostraHomepage = function() {
+                window.location = "index.html";
+            }
+
+            mostra=function(nome){
+                window.location = nome+".html";
+                document.getElementById(nome).style.display = 'block';
+                document.getElementById('Footer').style.display = 'block';
+            }
+
+            nascondiTutto=function()
+            {
+            }
+
+            
+         </script>
+    </head>
+
+
+    <body>
+        <a name="Home"></a>
+        <div id="containerCentrale">
+            <img src="Links/Logo.png" onclick="mostraHomepage();nascondiTutto()"class="logo">
+            <img src="Links/Morenos.png"  class="floatDx fotoMia">
+
+
+        </div>
+        <div id="Home" class="unhidden">
+                <a href="#Home" onclick="mostraHomepage();nascondiTutto()">Ritorna all'HomePage</a>
+        </div>
+
+            
+        </div>
+
+        <div id="Fiaba" class="unhidden">
+            <div class="containerGrigioScuro clearfix">
+                    <div class="scrittaSchedaAltoDx">
+                        2016
+                    </div>
+                <div class="containerGrigioScuroProgetto">
+                    <div>
+                        <img src="Links/FiabaInterattiva.png" class="titoloLink immagine20">
+                    </div>
+                    <p>
+                        Realizzazione di una fiaba interattiva fruibile online. Progetto realizzato con Federico Gardoni, Gianluca Misto e Antonella Palazzolo per il laboratorio di Computer Grafica.                    
+                    </p>
+                    
+                    <img src="Links/Fiaba/ComputerGrafica_1.png" class="floatSx immagineProgetto immagine100">
+                    <img src="Links/Fiaba/ComputerGrafica_2.png" class="floatSx immagineProgetto immagine100">
+                    <img src="Links/Fiaba/ComputerGrafica_3.png" class="floatSx immagineProgetto immagine100">
+                    <img src="Links/Fiaba/ComputerGrafica_4.png" class="floatSx immagineProgetto immagine100">
+                    <img src="Links/Fiaba/ComputerGrafica_5.png" class="floatSx immagineProgetto immagine100">
+                    <img src="Links/Fiaba/ComputerGrafica_6.png" class="floatSx immagineProgetto immagine100">
+                    
+
+                </div>
+                    
+            </div>
+        </div>
+        
+        </div>
+    
+    </div>
+
+        
+
+        <div id="Footer" class="unhidden">
+            <a href="#Home" onclick="mostraHomepage();nascondiTutto()">Ritorna all'HomePage</a>
+        </div>
+
+    </body>
+</html>

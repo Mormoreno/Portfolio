@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Portfolio Moreno Maio</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script type="text/javascript"> 
+             nascondiHomepage = function() {
+            }
+            mostraHomepage = function() {
+                window.location = "index.html";
+            }
+
+            mostra=function(nome){
+                window.location = nome+".html";
+                document.getElementById(nome).style.display = 'block';
+                document.getElementById('Footer').style.display = 'block';
+            }
+
+            nascondiTutto=function()
+            {
+            }
+
+            
+         </script>
+    </head>
+
+
+    <body>
+        <a name="Home"></a>
+        <div id="containerCentrale">
+            <img src="Links/Logo.png" onclick="mostraHomepage();nascondiTutto()"class="logo">
+            <img src="Links/Morenos.png"  class="floatDx fotoMia">
+        </div>
+        
+        <div id="Home" class="hidden">
+                <a href="#Home" onclick="mostraHomepage();nascondiTutto()">Ritorna all'HomePage</a>
+        </div>
+
+        <div id="HomePage" class="unhidden">
+            <div class="containerGrigioScuro clearfix">
+                    <div class="scrittaSchedaAltoDx">
+                        Editoria
+                    </div>
+                    <div class="containerGrigioScuroInside">
+                        <div>
+                            <img onclick="nascondiHomepage();mostra('LibroVisivo')" src="Links/LibroVisivo.png" class="titoloLink immagine50">
+                        </div>
+
+                        <div>
+                            <img onclick="nascondiHomepage();mostra('DesignVerso')" src="Links/DesignVerso.png" class="floatDx titoloLink immagine30">
+                        </div>
+
+                        <div>
+                            <img onclick="nascondiHomepage();mostra('Cinema')" src="Links/CinemaeFotografia.png" class="clear titoloLink immagine30" >
+                        </div>
+                    </div>            
+            </div>
+
+            <div class="containerGrigioScuro clearfix">
+                <div class="scrittaSchedaAltoDx">
+                    UX design
+                </div>
+                <div class="containerGrigioScuroInside">
+                    <div>
+                        <img onclick="nascondiHomepage();mostra('Fiaba')" src="Links/FiabaInterattiva.png" class="titoloLink immagine50">
+                    </div>
+
+                    <div>
+                        <img onclick="nascondiHomepage();mostra('Creative')" src="Links/CreativeCoding.png" class="floatDx titoloLink immagine30">
+                    </div>
+
+                    <div>
+                        <img onclick="nascondiHomepage();mostra('Interactive')" src="Links/Interactive.png" class="clear titoloLink immagine20" >
+                    </div>
+                </div>            
+            </div>
+
+            <div class="containerGrigioScuro clearfix">
+                <div class="scrittaSchedaAltoDx">
+                    Brand Identity
+                </div>
+                <div class="containerGrigioScuroInside">
+                    <div>
+                        <img onclick="nascondiHomepage();mostra('MuseoGraphic')" src="Links/MuseoGraphic.png" class="titoloLink immagine40">
+                    </div>
+
+                    <div>
+                        <img onclick="nascondiHomepage();mostra('Oreo')" src="Links/Oreo.png" class="floatDx titoloLink immagine30">
+                    </div>
+
+                    <div class="clear">
+                    </div>
+                </div>            
+             </div>
+
+             
+            
+        </div>
+
+        <div id="containerCentrale">
+            <div id="Footer floatSx" class="unhidden">
+                <br>
+                Moreno Maio |
+                848496<br>
+                Politecnico di Milano
+                <br>
+            </div>
+        </div>
+
+            
+    
+   
+
+        
+
+        
+
+    </body>
+</html>

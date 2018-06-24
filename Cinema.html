@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Portfolio Moreno Maio</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script type="text/javascript"> 
+            nascondiHomepage = function() {
+            }
+            mostraHomepage = function() {
+                window.location = "index.html";
+            }
+
+            mostra=function(nome){
+                window.location = nome+".html";
+                document.getElementById(nome).style.display = 'block';
+                document.getElementById('Footer').style.display = 'block';
+            }
+
+            nascondiTutto=function()
+            {
+            }
+
+            
+         </script>
+    </head>
+
+
+    <body>
+        <a name="Home"></a>
+        <div id="containerCentrale">
+            <img src="Links/Logo.png" onclick="mostraHomepage();nascondiTutto()"class="logo">
+            <img src="Links/Morenos.png"  class="floatDx fotoMia">
+
+
+        </div>
+        <div id="Home" class="unhidden">
+                <a href="#Home" onclick="mostraHomepage();nascondiTutto()">Ritorna all'HomePage</a>
+        </div>
+
+            
+        </div>
+
+        <div id="Cinema" class="unhidden">
+            <div class="containerGrigioScuro clearfix">
+                    <div class="scrittaSchedaAltoDx">
+                        2018
+                    </div>
+                <div class="containerGrigioScuroProgetto">
+                    <div>
+                        <img src="Links/CinemaeFotografia.png" class="titoloLink immagine20">
+                    </div>
+                    <p>
+                            Due trentaduesimi realizzati per il corso di Linguaggi Audiovisivi, riguardanti l’utilizzo delle ombre del cinema e la fotografia di Robert Adams.                    
+                    </p>
+                    
+                    <img src="Links/Cinema/Fotografia_1.jpg" class="floatSx immagineProgetto immagine60">
+                    <img src="Links/Cinema/Fotografia_2.jpg" class="floatSx immagineProgetto immagine50">
+                    <img src="Links/Cinema/Fotografia_3.jpg" class="floatSx immagineProgetto immagine40">
+                    <img src="Links/Cinema/Fotografia_4.jpg" class="floatSx immagineProgetto immagine50">
+                    <img src="Links/Cinema/Fotografia_5.jpg" class="floatSx immagineProgetto immagine100">
+
+                    <img src="Links/Cinema/Cinema_1.jpg" class="floatDx immagineProgetto immagine60">
+                    <img src="Links/Cinema/Cinema_2.jpg" class="floatDx immagineProgetto immagine50">
+                    <img src="Links/Cinema/Cinema_3.jpg" class="floatDx immagineProgetto immagine40">
+                    <img src="Links/Cinema/Cinema_4.jpg" class="floatDx immagineProgetto immagine50">
+                    <img src="Links/Cinema/Cinema_5.jpg" class="floatDx immagineProgetto immagine100">
+
+                    <embed src="Links/Cinema/TesinaFotografia.pdf" class="floatSx videoProgetto immagine100" />
+                    <embed src="Links/Cinema/TesinaCinema.pdf" class="floatSx videoProgetto immagine100" />
+                    
+
+                </div>
+                    
+            </div>
+        </div>
+        
+        </div>
+    
+    </div>
+
+        
+
+        <div id="Footer" class="unhidden">
+            <a href="#Home" onclick="mostraHomepage();nascondiTutto()">Ritorna all'HomePage</a>
+        </div>
+
+    </body>
+</html>

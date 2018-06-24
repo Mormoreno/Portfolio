@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Portfolio Moreno Maio</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script type="text/javascript"> 
+            nascondiHomepage = function() {
+            }
+            mostraHomepage = function() {
+                window.location = "index.html";
+            }
+
+            mostra=function(nome){
+                window.location = nome+".html";
+                document.getElementById(nome).style.display = 'block';
+                document.getElementById('Footer').style.display = 'block';
+            }
+
+            nascondiTutto=function()
+            {
+            }
+
+            
+         </script>
+    </head>
+
+
+    <body>
+        <a name="Home"></a>
+        <div id="containerCentrale">
+            <img src="Links/Logo.png" onclick="mostraHomepage();nascondiTutto()"class="logo">
+            <img src="Links/Morenos.png"  class="floatDx fotoMia">
+
+
+        </div>
+        <div id="Home" class="unhidden">
+                <a href="#Home" onclick="mostraHomepage();nascondiTutto()">Ritorna all'HomePage</a>
+        </div>
+
+            
+        </div>
+
+        <div id="MuseoGraphic" class="unhidden">
+            <div class="containerGrigioScuro clearfix">
+                    <div class="scrittaSchedaAltoDx">
+                        2017
+                    </div>
+                <div class="containerGrigioScuroProgetto">
+                    <div>
+                        <img src="Links/MuseoGraphic.png" class="titoloLink immagine20">
+                    </div>
+                    <p>
+                        Immagine coordinata di un museo di grafica. Realizzato in gruppo con Federica Buratti, Federico Gardoni, Gianluca Misto e Elisa Ponti per il laboratorio di progetto della comunicazione visiva.                        
+                    </p>  
+                    
+                    
+                <img src="Links/MuseoGraphic/MuseoGraphic_1.jpg" class="floatSx immagineProgetto immagine100">
+                <img src="Links/MuseoGraphic/MuseoGraphic_2.jpg" class="floatSx immagineProgetto immagine100">
+                <img src="Links/MuseoGraphic/MuseoGraphic_3.jpg" class="floatSx immagineProgetto immagine100">
+                <img src="Links/MuseoGraphic/MuseoGraphic_4.jpg" class="floatSx immagineProgetto immagine100">
+                <img src="Links/MuseoGraphic/MuseoGraphic_5.jpg" class="floatSx immagineProgetto immagine100">
+                <img src="Links/MuseoGraphic/MuseoGraphic_6.jpg" class="floatSx immagineProgetto immagine100">
+                
+                <video controls class="immagineProgetto immagine100">
+                    <source src="Links/MuseoGraphic/MuseoGraphic_Video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                    
+
+                </div>
+                    
+            </div>
+        </div>
+        
+        </div>
+    
+    </div>
+
+        
+
+        <div id="Footer" class="unhidden">
+            <a href="#Home" onclick="mostraHomepage();nascondiTutto()">Ritorna all'HomePage</a>
+        </div>
+
+    </body>
+</html>

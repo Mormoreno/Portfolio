@@ -115,10 +115,7 @@ body
     }
 }
 
-.hidden
-{
-    display: none;
-}
+
 
 .unhidden
 {
@@ -236,6 +233,30 @@ img
     display: block;
 }
 
+.didascalia
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.didascaliaVera
+{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    transition: all 0.2s ease;
+}
+
+
+.alignSx
+{
+    text-align: left;
+}
+
+.alignDx
+{
+    text-align: right;
+}
+
 .titoloLink
 {
     padding-top: 2em;
@@ -323,5 +344,11 @@ strong
     font-weight: 800;
     font-size: 1.8vh;
     color: rgb(255, 253, 164);
+}
+
+.hidden
+{
+    display: none;
+    transform: scale(0);
 }
 

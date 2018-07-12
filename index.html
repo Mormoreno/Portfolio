@@ -22,6 +22,16 @@
             {
             }
 
+            mostraDidascalia=function(nome)
+            {
+                document.getElementById(nome).style.transform = 'scale(1)';
+            }
+
+            nascondiDidascalia=function(nome)
+            {
+                document.getElementById(nome).style.transform = 'scale(0)';
+            }
+
             
          </script>
     </head>
@@ -42,37 +52,52 @@
             <div class="containerGrigioScuro clearfix">
                     
                 <div class="containerGrigioScuroInside">
+                    
                     <div>
-                        <img onclick="nascondiHomepage();mostra('LibroVisivo')" src="Links/LibroVisivo.png" class="titoloLink immagine50">
-                    </div>
-
-                    <div>
-                        <img onclick="nascondiHomepage();mostra('DesignVerso')" src="Links/DesignVerso.png" class="floatDx titoloLink immagine30">
-                    </div>
-
-                    <div>
-                        <img onclick="nascondiHomepage();mostra('Cinema')" src="Links/CinemaeFotografia.png" class="clear titoloLink immagine20" >
-                    </div>    
                             
+                        <img onmouseout="nascondiDidascalia('didaLibroVisivo')" onmouseover="mostraDidascalia('didaLibroVisivo')" onclick="nascondiHomepage();mostra('LibroVisivo')" src="Links/LibroVisivo.png" class="titoloLink immagine50 didascalia">
+                        <img id="didaLibroVisivo" src="Links/Editoria_LibroVisivo.png" class="titoloLink immagine40 didascalia didascaliaVera " style="transform: scale(0)">
+                    </div>
+                    
 
                     <div>
-                        <img onclick="nascondiHomepage();mostra('Fiaba')" src="Links/FiabaInterattiva.png" class="floatDx titoloLink immagine50">
+                        <img onmouseout="nascondiDidascalia('didaDesignVerso')" onmouseover="mostraDidascalia('didaDesignVerso')" onclick="nascondiHomepage();mostra('DesignVerso')" src="Links/DesignVerso.png" class="floatDx titoloLink immagine30 didascalia">                    
+                    
+                        <img id="didaDesignVerso" src="Links/Editoria_DesignVerso.png" class="floatDx titoloLink immagine40 didascalia didascaliaVera" style="transform: scale(0)">
+                    </div>
+                    
+                    <div>
+
+                        <img onmouseout="nascondiDidascalia('didaCinema')" onmouseover="mostraDidascalia('didaCinema')" onclick="nascondiHomepage();mostra('Cinema')" src="Links/CinemaeFotografia.png" class="clear titoloLink immagine50 didascalia" >
+                        <img id="didaCinema" src="Links/Editoria_Cinema.png" class=" titoloLink immagine30 didascalia didascaliaVera " style="transform: scale(0)">
+                    </div>    
+                         
+
+                    <div>
+                        <img  onmouseout="nascondiDidascalia('didaFiaba')" onmouseover="mostraDidascalia('didaFiaba')" onclick="nascondiHomepage();mostra('Fiaba')" src="Links/FiabaInterattiva.png" class="floatDx titoloLink immagine50 didascalia">
+                        <img id="didaFiaba" src="Links/UX_CumputerGrafica.png" class=" titoloLink immagine40 didascalia didascaliaVera " style="transform: scale(0)">
+
                     </div>
 
                     <div>
-                        <img onclick="nascondiHomepage();mostra('Interactive')" src="Links/Interactive.png" class="clear titoloLink immagine40" >
+                        <img onmouseout="nascondiDidascalia('didaUsability')" onmouseover="mostraDidascalia('didaUsability')"   onclick="nascondiHomepage();mostra('Interactive')" src="Links/Interactive.png" class="clear titoloLink immagine40 didascalia" >
+                        <img id="didaUsability" src="Links/UX_Usability.png" class=" titoloLink immagine40 didascalia didascaliaVera " style="transform: scale(0)">
                     </div> 
 
                     <div>
-                        <img onclick="nascondiHomepage();mostra('Creative')" src="Links/CreativeCoding.png" class="floatDx titoloLink immagine30">
+                        <img  onmouseout="nascondiDidascalia('didaCreative')" onmouseover="mostraDidascalia('didaCreative')"  onclick="nascondiHomepage();mostra('Creative')" src="Links/CreativeCoding.png" class="floatDx titoloLink immagine30 didascalia">
+                        <img id="didaCreative" src="Links/UX_Ecosystem.png" class="floatDx titoloLink immagine40 didascalia didascaliaVera" style="transform: scale(0)">
+
                     </div>
         
                     <div>
-                        <img onclick="nascondiHomepage();mostra('MuseoGraphic')" src="Links/MuseoGraphic.png" class="clear titoloLink immagine40">
+                        <img  onmouseout="nascondiDidascalia('didaMuseo')" onmouseover="mostraDidascalia('didaMuseo')"  onclick="nascondiHomepage();mostra('MuseoGraphic')" src="Links/MuseoGraphic.png" class="clear titoloLink immagine40 didascalia">
+                        <img id="didaMuseo" src="Links/Brand_Museo.png" class="titoloLink immagine40 didascalia didascaliaVera" style="transform: scale(0)">
                     </div>
 
                     <div>
-                        <img onclick="nascondiHomepage();mostra('Oreo')" src="Links/Oreo.png" class="floatDx titoloLink immagine20">
+                        <img onmouseout="nascondiDidascalia('didaOreo')" onmouseover="mostraDidascalia('didaOreo')"  onclick="nascondiHomepage();mostra('Oreo')" src="Links/Oreo.png" class="floatDx titoloLink immagine20 didascalia">
+                        <img id="didaOreo" src="Links/Brand_Oreo.png" class="floatDx titoloLink immagine40 didascalia didascaliaVera" style="transform: scale(0)">
                     </div>
 
                     <div class="clear">
